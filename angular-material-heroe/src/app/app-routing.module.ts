@@ -13,6 +13,10 @@ const routes: Routes = [
     loadChildren: () => import('./heroes/heroes.module').then( m => m.HeroesModule )
   },
   {
+    path: 'prueba',
+    loadChildren: () => import('./pruebas/prueba.module').then( m => m.PruebaModule )
+  },
+  {
     path: '404',
     component: ErrorPageComponent
   },
